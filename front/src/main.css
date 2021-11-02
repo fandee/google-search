@@ -1,0 +1,165 @@
+.main {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.search-box {
+    position: relative;
+    margin-top: 50px;
+    
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 100px 10px 50px;
+
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 20px;
+}
+
+.search-box:before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('./assets/glass.png') 0 0 no-repeat;
+    background-size: contain;
+    opacity: 0.7;
+}
+
+.microphone {
+    position: absolute;
+    top: 9px;
+    right: 11px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('./assets/mic.png') 0 0 no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.listening {
+    background-color: lime;
+}
+
+.search-box:hover {
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+.clearBtn {
+    position: absolute;
+    top: 14px;
+    font-size: 30px;
+    right: 67px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    line-height: 24px;
+    padding: 0;
+}
+
+.clearBtn:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.3);
+    top: -5px;
+    right: -15px;
+}
+
+.dropbox {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 300px;
+    padding-bottom: 20px;
+
+    background: transparent;
+}
+
+.dropbox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 580px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+    left: 10px;
+}
+
+.search-item {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    cursor: default;
+    outline: none;
+}
+
+.search-item:hover,
+.search-item:focus {
+    background-color: rgba(100, 100, 100, 0.1)
+}
+
+.dlSearch, .fnSearch {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    cursor: pointer;
+    line-height: 25px;
+}
+
+.searched {
+    color: #1a0dab;
+}
+
+.dlSearch:hover,
+.dlSearch:focus {
+    background-color: rgba(100, 100, 100, 0.3);
+    border-radius: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.features a {
+    padding: 12px 20px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: black;
+    opacity: 0.9;
+    cursor: pointer;
+    background-color: rgba(200, 200, 200, 0.12);
+}
+
+.features a:hover {
+    box-shadow: 0 1px 4px rgba(100, 100, 100, 0.3)
+}
+
+.features a:first-child {
+    margin-right: 10px;
+}
